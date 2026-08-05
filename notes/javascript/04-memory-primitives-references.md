@@ -14,6 +14,12 @@ Le Stack est le terme utilisé pour la mémoire qui contient:
 -les variables simples
 -les références des objets
 
+et le Heap est le terme utilisé pour la mémoire qui contient:
+-les objets
+-les tableaux
+-les fonctions
+-certaines données complexes
+
 ---
 
 ## Valeurs primitives
