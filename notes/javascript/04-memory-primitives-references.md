@@ -66,7 +66,7 @@ console.log(a === b); // se sont les valeurs de a et b qui seront comparés ce q
 
 ## Comparaison des références
 
-contrainement aux variables de types primitifs, la comparaison des objets se fait au niveau de leur référence.
+contrairement aux variables de types primitifs, la comparaison des objets se fait au niveau de leur référence.
 
 exemple:
 

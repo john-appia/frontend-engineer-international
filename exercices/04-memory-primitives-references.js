@@ -2,10 +2,10 @@
 
 // Sans exécuter le code, donne le résultat et Explique pourquoi:
 
-/** 
+/**
  * le résultat sera 5 et 10, car la variabe a est de type primitif number, donc elle est stockée en mémoire par valeur.
  * Quand on fait b = a, on copie juste la valeur de a dans b. donc la modification de la valeur de b (b = 10) n'affecte pas la valeur de a.
-*/
+ */
 
 let a = 5;
 let b = a;
@@ -40,7 +40,7 @@ console.log(user1 === user2);
 
 // Exercice 3
 /**
- * le résultat sera false, car les constantes product1 et product2 sont stockées en mémoires avec des références différentes 
+ * le résultat sera false, car les constantes product1 et product2 sont stockées en mémoires avec des références différentes
  * même si elles sont initialisées avec le même contenu.
  */
 const product1 = {
@@ -58,7 +58,7 @@ console.log(product1 === product2);
 // Exercice 4 — Niveau React
 
 /**
- * la constante state est créé et stockée en mémoire par référence, ensuite une copie de la référence de state est affecté 
+ * la constante state est créé et stockée en mémoire par référence, ensuite une copie de la référence de state est affecté
  * à une nouvelle constante nextState. on réaffecte une nouvelle valeur à la propriété profile.name de nextState
  * comme nextState et State pointent vers la même référence, alors la propriété profile.name de state aura la même valeur.
  * et donc on aura comme résultat: David et true, car les deux constantes pointent vers la même référence en mémoire.
@@ -88,17 +88,21 @@ console.log(nextState === state);
  */
 
 // Code A
-{const user = {
-  name: "John",
-};
+{
+  const user = {
+    name: "John",
+  };
 
-user.name = "David";}
+  user.name = "David";
+}
 
 // Code B
-{const user = {
-  name: "John",
-};
+{
+  const user = {
+    name: "John",
+  };
 
-user = {
-  name: "David",
-};}
+  user = {
+    name: "David",
+  };
+}
